@@ -1,0 +1,51 @@
+{
+	"_version": "1.9.0",
+	"sap.app": {
+		"_version": "1.2.0",
+		"id": "com.vaibhavmojidra.descriptorforapplicationsormanifestjsondemo",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}"
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": []
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.108.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.vaibhavmojidra.descriptorforapplicationsormanifestjsondemo.i18n.i18n",
+					"supportedLocales": [""],
+					"fallbackLocale": ""
+				}
+			}
+		},
+		"rootView": {
+			"viewName": "com.vaibhavmojidra.descriptorforapplicationsormanifestjsondemo.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": false
+		}
+	}
+}
